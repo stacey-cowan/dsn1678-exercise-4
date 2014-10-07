@@ -30,15 +30,41 @@ section {
 
 .js-dipper-fade {
     /*Don't forget the other prefixes!*/
-    -webkit-animation: dipper-fade 1s linear;
+    -webkit-animation: dipper-fade 1s linear forwards;
 }
 
 /*Don't forget the other prefixes!*/
 @-webkit-keyframes dipper-fade {
-    0{
+    0% {
         opacity: 0;
     }
-    100{
-        opacity: 1;
+    100% {
+        opacity:1;
     }
 }
+
+.shuttle-section {
+    background-color:#d37200;
+}
+
+.shuttle {
+    width: 200px;
+    position:relative;
+    opacity:0;
+}
+
+.js-shuttle-fade {
+    -webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    100% {
+        opacity:1;
+        top:0px;
+    }
+}
+
