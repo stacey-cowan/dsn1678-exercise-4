@@ -11,5 +11,7 @@ $win.on('scroll', function () {
     $sunSection.css('background-position', 'center ' + scrollPos / 2 + 'px');
 });
 
-
+$dipperSection.waypoint(function () {
+    console.log('Visible');
+}, { offset: '50%' });
 
